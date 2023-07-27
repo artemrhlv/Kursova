@@ -1,0 +1,120 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "jsonrpc": {
+      "type": "string"
+    },
+    "result": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer"
+        },
+        "name": {
+          "type": "string"
+        },
+        "is_active": {
+          "type": "integer"
+        },
+        "token": {
+          "type": "string"
+        },
+        "last_modified": {
+          "type": "integer"
+        },
+        "is_public": {
+          "type": "integer"
+        },
+        "is_private": {
+          "type": "integer"
+        },
+        "description": {
+          "type": "string"
+        },
+        "identifier": {
+          "type": "string"
+        },
+        "start_date": {
+          "type": "string"
+        },
+        "end_date": {
+          "type": "string"
+        },
+        "owner_id": {
+          "type": "integer"
+        },
+        "priority_default": {
+          "type": "integer"
+        },
+        "priority_start": {
+          "type": "integer"
+        },
+        "priority_end": {
+          "type": "integer"
+        },
+        "email": {
+          "type": "null"
+        },
+        "predefined_email_subjects": {
+          "type": "null"
+        },
+        "per_swimlane_task_limits": {
+          "type": "integer"
+        },
+        "task_limit": {
+          "type": "integer"
+        },
+        "enable_global_tags": {
+          "type": "integer"
+        },
+        "url": {
+          "type": "object",
+          "properties": {
+            "board": {
+              "type": "string"
+            },
+            "list": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "board",
+            "list"
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "is_active",
+        "token",
+        "last_modified",
+        "is_public",
+        "is_private",
+        "description",
+        "identifier",
+        "start_date",
+        "end_date",
+        "owner_id",
+        "priority_default",
+        "priority_start",
+        "priority_end",
+        "email",
+        "predefined_email_subjects",
+        "per_swimlane_task_limits",
+        "task_limit",
+        "enable_global_tags",
+        "url"
+      ]
+    },
+    "id": {
+      "type": "integer"
+    }
+  },
+  "required": [
+    "jsonrpc",
+    "result",
+    "id"
+  ]
+}
